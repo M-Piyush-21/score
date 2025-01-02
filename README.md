@@ -58,13 +58,15 @@ Start the development server:
 
 npm run dev
 🏗️ Project Structure Details
+
 Frontend (/frontend)
 Built with: React + Vite
 Styling: Tailwind CSS
 Key directories:
-/src/components: Contains reusable React components
-/src/lib: Includes utility functions and helpers
-/public: Stores static assets like images and icons
+/src/components: Contains reusable React components,
+/src/lib: Includes utility functions and helpers,
+/public: Stores static assets like images and icons,
+
 Backend (/server)
 Built with: Node.js + Express
 Key directories:
@@ -74,6 +76,8 @@ Key directories:
 /middlewares: Holds custom middleware for authentication, logging, etc.
 /graphql: Manages GraphQL schemas and resolvers
 /uploads: Handles file storage requirements
+
+
 🌐 Access Points
 Frontend: http://localhost:5173 (default Vite port)
 Backend: http://localhost:8000
@@ -84,6 +88,8 @@ Node.js (v14 or higher)
 npm or yarn (Node.js package managers)
 MongoDB (Installed and running locally or remotely)
 A modern web browser (e.g., Google Chrome, Firefox)
+
+
 ⚠️ Important Notes
 Ensure MongoDB is running before starting the backend server.
 The backend server must be running for the frontend to function properly.
