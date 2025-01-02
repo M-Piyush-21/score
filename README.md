@@ -60,12 +60,18 @@ npm run dev
 🏗️ Project Structure Details
 
 Frontend (/frontend)
+
 Built with: React + Vite
+
 Styling: Tailwind CSS
+
 Key directories:
+
 /src/components: Contains reusable React components,
+
 /src/lib: Includes utility functions and helpers,
-/public: Stores static assets like images and icons,
+
+/public: Stores static assets like images and icons.
 
 Backend (/server)
 Built with: Node.js + Express
