@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .admin-layout {
+    @apply min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950
+           bg-fixed relative overflow-hidden;
+  }
+
+  .admin-layout::before {
+    content: '';
+    @apply fixed inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(168,85,247,0.07),rgba(0,0,0,0)_800px)] z-0;
+  }
+
+  .admin-layout::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br
+           from-purple-500/5 via-indigo-500/5 to-purple-500/5
+           opacity-50 -z-10;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  .admin-main {
+    @apply ml-64 min-h-screen relative z-10;
+  }
+
+  /* Glowing orbs in the background */
+  .admin-layout .orb-1 {
+    @apply absolute top-1/4 left-1/4 w-96 h-96 rounded-full
+           bg-purple-500/10 blur-3xl -z-10;
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .admin-layout .orb-2 {
+    @apply absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full
+           bg-indigo-500/10 blur-3xl -z-10;
+    animation: float 8s ease-in-out infinite reverse;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, 20px);
+  }
+}

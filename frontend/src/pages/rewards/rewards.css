@@ -1,0 +1,256 @@
+.rewards-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.rewards-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rewards-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.stats-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  background: var(--bg-color-secondary);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h3 {
+  font-size: 1.1rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.next-medal-section {
+  margin: 3rem 0;
+}
+
+.next-medal-section h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.next-medal-card {
+  display: flex;
+  align-items: center;
+  background: var(--bg-color-secondary);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.medal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.medal-icon svg {
+  color: white;
+}
+
+.medal-info {
+  flex: 1;
+}
+
+.medal-info h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.medal-info p {
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.medals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.medal-card {
+  background: var(--bg-color-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.medal-card:hover {
+  transform: translateY(-4px);
+}
+
+.medal-card.earned {
+  border: 2px solid var(--primary-color);
+}
+
+.medal-content {
+  margin-top: 1rem;
+}
+
+.medal-content h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+  text-align: right;
+}
+
+.course-progress-section {
+  margin-top: 4rem;
+}
+
+.course-progress-section h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.course-progress-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.course-progress-item {
+  background: var(--bg-color-secondary);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.course-progress-item h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.progress-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+}
+
+.rewards-list {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.rewards-list h4 {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.rewards-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rewards-list li {
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.rewards-list li:before {
+  position: absolute;
+  left: 0;
+}
+
+.rewards-list li.earned {
+  color: var(--primary-color);
+}
+
+.earned-text {
+  color: var(--primary-color);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.earned-text:before {
+  content: '🎉';
+}
+
+.earned-text:after {
+  content: '🎉';
+}
+
+@media (max-width: 768px) {
+  .stats-summary {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .next-medal-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .medal-icon {
+    margin: 0 auto 1.5rem;
+  }
+
+  .medals-grid {
+    grid-template-columns: 1fr;
+  }
+}
