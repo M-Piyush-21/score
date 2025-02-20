@@ -2,7 +2,7 @@ Here’s the README formatted correctly for GitHub, maintaining your original st
 
 ---
 
-# Vendatu - EdTech Platform Setup Guide  
+# Score - EdTech Platform Setup Guide  
 
 **Vendatu** is a modern EdTech platform built using the **MERN stack**. The project is structured with a clear separation between the frontend and backend, making it easy to understand and maintain.  
 
